@@ -44,6 +44,12 @@ h3 {
     width: 30px;
 }
 
+/* Header */
+
+#header .lead {
+    font-family: var(--secondary-font);
+}
+
 /* grid visualisation CSS for testing */
 
 /* .container,
