@@ -245,8 +245,54 @@
             <p>*Get 20% off with valid student ID</p>
         </div>
     </div>
-</section>    
-                
+</section>  
+
+<!--Game Reservation Form-->
+<section id="game-reservation" class="container section">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h2 class="display-6">Reserve a game</h2>
+            <p>Reserve a board game for your next visit to Boardwalk Games. Pick your challenge, and let the adventure begin! Fill out your details and preferred game below, and we'll have it set aside for you when you arrive.</p>
+            
+        </div>
+        <div class="col-12 col-md-8 offset-md-2">
+            <form action="reservation.php" method="POST" class="mb-4">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                </div>                
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="game" class="form-label">Select game</label>
+                    <select id="game" class="form-select" name="game" required>
+                        <option value="" selected>Select game</option>
+                        <option value="Galaxy Pioneers">Galaxy Pioneers</option>
+                        <option value="Mystic Woods">Mystic Woods</option>
+                        <option value="Captain's Gambit">Captain's Gambit</option>
+                        <option value="Critter Quest">Critter Quest</option>
+                        <option value="Setters of Catan">Setters of Catan</option>
+                        <option value="Monopoly">Monopoly</option>
+                        <option value="Exploding Kittens">Exploding Kittens</option>
+                        <option value="Cluedo">Cluedo</option>
+                    </select>                    
+                </div>
+                <p>Reserve a board game for your next visit to Boardwalk Games. Pick your challenge, and let the adventure begin! Fill out your details and preferred game below, and we'll have it set aside for you when you arrive.</p>
+                <div class="mb-3">
+                    <label for="date" class="form-label">Date</label>
+                    <input type="date" class="form-control" id="date" name="date" min="2025-04-11" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Reserve</button>
+            </form>
+        </div>
+    </div>
+</section>
             </main>
 
             <!-- Footer / contact section -->
