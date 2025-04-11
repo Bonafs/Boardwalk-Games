@@ -141,6 +141,57 @@ h2 {
     background-color: transparent;
 }
 
+/* Form container styling */
+#game-reservation {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Form labels */
+#game-reservation .form-label {
+    font-weight: bold;
+    color: var(--primary-color); /* Use your primary color variable */
+}
+
+/* Input fields */
+#game-reservation .form-control,
+#game-reservation .form-select {
+    border: 2px solid var(--secondary-color); /* Light brown border */
+    border-radius: 5px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease-in-out;
+}
+
+#game-reservation .form-control:focus,
+#game-reservation .form-select:focus {
+    border-color: var(--highlight-color); /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(65, 106, 142, 0.5); /* Highlight effect */
+}
+
+/* Submit button */
+#game-reservation .btn-primary {
+    background-color: var(--highlight-color); /* Blue background */
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#game-reservation .btn-primary:hover {
+    background-color: var(--highlight-color-light); /* Lighter blue on hover */
+}
+
+/* Paragraph styling */
+#game-reservation p {
+    font-size: 1rem;
+    color: var(--primary-color); /* Dark brown text */
+    margin-top: 1rem;
+}
 
 /* grid visualisation CSS for testing */
 
