@@ -17,6 +17,24 @@ body {
     font-family: var(--primary-font);
 }
 
+/* Custom button styles */
+.custom-button-outline {
+    color: var(--highlight-color); /* Blue text */
+    border: 2px solid var(--highlight-color); /* Blue border */
+    background-color: transparent; /* Transparent background */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-button-outline:hover {
+    color: white; /* White text on hover */
+    background-color: var(--highlight-color); /* Blue background on hover */
+    border-color: var(--highlight-color); /* Keep border blue */
+}
+
 h1,
 h2,
 h3 {
