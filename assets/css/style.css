@@ -17,23 +17,7 @@ body {
     font-family: var(--primary-font);
 }
 
-/* Custom button styles */
-.custom-button-outline {
-    color: var(--highlight-color); /* Blue text */
-    border: 2px solid var(--highlight-color); /* Blue border */
-    background-color: transparent; /* Transparent background */
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: all 0.3s ease-in-out;
-}
 
-.custom-button-outline:hover {
-    color: white; /* White text on hover */
-    background-color: var(--highlight-color); /* Blue background on hover */
-    border-color: var(--highlight-color); /* Keep border blue */
-}
 
 h1,
 h2,
@@ -59,6 +43,32 @@ h2 {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
+/* Buttons */
+
+.custom-button-filled {
+    border: 2px solid var(--highlight-color);
+    background-color: var(--highlight-color);
+    color: white;
+}
+
+.custom-button-filled:hover {
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.custom-button-outline {
+    border: 3px solid var(--highlight-color);
+    padding: 7px 25px;
+    color: var(--highlight-color)
+}
+
+.custom-button-outline:hover {
+    background-color: var(--highlight-color);
+    color: white
+}
+
 
 /* Navbar */
 
